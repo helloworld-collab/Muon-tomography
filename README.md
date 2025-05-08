@@ -1,17 +1,14 @@
-# Muon Flux Angular Distribution Analysis
-
-This project analyzes muon zenith angle distributions using simulation data from CORSIKA. Histograms of `cos(θ)` are plotted to study angular dependencies at different observation levels.
 
 ## Contents
 
 - **`lyon.cc`**  
-  C++ script to process the ROOT file `DAT000003lyon.root` and generate histograms for muon `cos(θ)` at various observation levels.
+  C++ script to process the ROOT file `DAT000003lyon.root` and generate histograms for muon `cos squared(θ)` and other parameters at various observation levels.
 
 - **`chyulu.cc`**  
   Similar to `lyon.cc`, but processes the data from `DAT000003chyulu.root` corresponding to Chyulu Hills.
 
 - **`DAT000003lyon.root`**  
-  ROOT file containing simulated muon event data for Lyon. Produced by running CORSIKA and converting the output with a COAST-based parser.
+  ROOT file containing simulated muon event data for Lyon. Produced by running CORSIKAPLOTTER and converting the output with a COAST-based parser.
 
 - **`DAT000003chyulu.root`**  
   ROOT file containing muon event data for Chyulu Hills.
